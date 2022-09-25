@@ -23,6 +23,7 @@
 -	Добавить кубу симуляцию физики, при это куб не должен проваливаться под Plane;
 - Написать скрипт, который будет выводить в консоль сообщение о том, что объект Sphere столкнулся с объектом Cube;
 '''C#
+
     public class AddCollider : MonoBehaviour
     {
         // Start is called before the first frame update
@@ -47,6 +48,7 @@
             other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
         }
     }
+    
 '''
 - При столкновении Cube должен менять свой цвет на зелёный, а при завершении столкновения обратно на красный.
 
@@ -63,6 +65,7 @@
 Считываем значение переменной при обновлении
 Если значение - верное количество объектов - спавник кубики
 '''C#
+
     public class ReadLine : MonoBehaviour
     {
         public int n = -1;
@@ -86,6 +89,7 @@
 
         }
     }
+    
 '''
 
 
