@@ -23,33 +23,29 @@
 -	Добавить кубу симуляцию физики, при это куб не должен проваливаться под Plane;
 - Написать скрипт, который будет выводить в консоль сообщение о том, что объект Sphere столкнулся с объектом Cube;
 '''C#
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
-
     public class AddCollider : MonoBehaviour
     {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        }
 
-    private void OnTriggerEnter(Collider other) {
-        Debug.Log("Произошло столкновение с " + other.gameObject.name);
-        other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green); 
-    }
+        // Update is called once per frame
+        void Update()
+        {
 
-    private void OnTriggerExit(Collider other) {
-        Debug.Log("Завершили столкновение с " + other.gameObject.name);
-        other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
-    }
+        }
+
+        private void OnTriggerEnter(Collider other) {
+            Debug.Log("Произошло столкновение с " + other.gameObject.name);
+            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green); 
+        }
+
+        private void OnTriggerExit(Collider other) {
+            Debug.Log("Завершили столкновение с " + other.gameObject.name);
+            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+        }
     }
 '''
 - При столкновении Cube должен менять свой цвет на зелёный, а при завершении столкновения обратно на красный.
@@ -67,10 +63,6 @@
 Считываем значение переменной при обновлении
 Если значение - верное количество объектов - спавник кубики
 '''C#
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
-
     public class ReadLine : MonoBehaviour
     {
         public int n = -1;
