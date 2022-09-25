@@ -23,12 +23,12 @@
 -	Добавить кубу симуляцию физики, при это куб не должен проваливаться под Plane;
 - Написать скрипт, который будет выводить в консоль сообщение о том, что объект Sphere столкнулся с объектом Cube;
 '''C#
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
 
-public class AddCollider : MonoBehaviour
-{
+    public class AddCollider : MonoBehaviour
+    {
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +50,51 @@ public class AddCollider : MonoBehaviour
         Debug.Log("Завершили столкновение с " + other.gameObject.name);
         other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
     }
-}
+    }
 '''
 - При столкновении Cube должен менять свой цвет на зелёный, а при завершении столкновения обратно на красный.
+
+## Задание 2
+### Продемонстрируйте на сцене в Unity следующее:
+- Что произойдёт с координатами объекта, если он перестанет быть дочерним?
+Координаты объекта изменятся с локальных на мировые
+- Создайте три различных примера работы компонента RigidBody?
+Падение(гравитация), Существование как физической сущности(kinematic), Активация тригеров
+
+## Задание 3
+### Реализуйте на сцене генерацию n кубиков. Число n вводится пользователем после старта сцены.
+Создаём public переменную типа int
+Считываем значение переменной при обновлении
+Если значение - верное количество объектов - спавник кубики
+'''C#
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    public class ReadLine : MonoBehaviour
+    {
+        public int n = -1;
+        public GameObject PrefCub;
+        public GameObject self;
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if(n >=0){
+                for (int i = 0; i<n; i++){
+                    Instantiate(PrefCub, self.transform.position, self.transform.rotation);
+                }
+                n = -1;
+            }
+
+        }
+    }
+'''
+
+
+
