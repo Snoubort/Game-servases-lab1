@@ -24,30 +24,30 @@
 - Написать скрипт, который будет выводить в консоль сообщение о том, что объект Sphere столкнулся с объектом Cube;
 '''C#
 
-    public class AddCollider : MonoBehaviour
-    {
-        // Start is called before the first frame update
-        void Start()
+        public class AddCollider : MonoBehaviour
         {
+            // Start is called before the first frame update
+            void Start()
+            {
 
+            }
+
+            // Update is called once per frame
+            void Update()
+            {
+
+            }
+
+            private void OnTriggerEnter(Collider other) {
+                Debug.Log("Произошло столкновение с " + other.gameObject.name);
+                other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green); 
+            }
+
+            private void OnTriggerExit(Collider other) {
+                Debug.Log("Завершили столкновение с " + other.gameObject.name);
+                other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            }
         }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
-        private void OnTriggerEnter(Collider other) {
-            Debug.Log("Произошло столкновение с " + other.gameObject.name);
-            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.green); 
-        }
-
-        private void OnTriggerExit(Collider other) {
-            Debug.Log("Завершили столкновение с " + other.gameObject.name);
-            other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
-        }
-    }
     
 '''
 - При столкновении Cube должен менять свой цвет на зелёный, а при завершении столкновения обратно на красный.
@@ -66,29 +66,29 @@
 Если значение - верное количество объектов - спавник кубики
 '''C#
 
-    public class ReadLine : MonoBehaviour
-    {
-        public int n = -1;
-        public GameObject PrefCub;
-        public GameObject self;
-        // Start is called before the first frame update
-        void Start()
+        public class ReadLine : MonoBehaviour
         {
+            public int n = -1;
+            public GameObject PrefCub;
+            public GameObject self;
+            // Start is called before the first frame update
+            void Start()
+            {
 
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            if(n >=0){
-                for (int i = 0; i<n; i++){
-                    Instantiate(PrefCub, self.transform.position, self.transform.rotation);
-                }
-                n = -1;
             }
 
+            // Update is called once per frame
+            void Update()
+            {
+                if(n >=0){
+                    for (int i = 0; i<n; i++){
+                        Instantiate(PrefCub, self.transform.position, self.transform.rotation);
+                    }
+                    n = -1;
+                }
+
+            }
         }
-    }
     
 '''
 
