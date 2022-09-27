@@ -18,18 +18,21 @@
 - Проверить, что настроена интеграция редактора Unity и Visual Studio Code (пункты 8-10 введения);
 ![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0.PNG?raw=true "Интеграция")
 - Создать объект Plane;
-Скрин plane
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/plane.PNG?raw=true "Optional Title")
 - Создать объект Cube;
-Скрин cube
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/cube.PNG?raw=true "Optional Title")
 -	Создать объект Sphere;
-Скрин Sphere
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Sphere.PNG?raw=true "Optional Title")
 -	Установить компонент Sphere Collider для объекта Sphere;
 -	Настроить Sphere Collider в роли триггера;
 Скрин Sphere collider
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Sphere%20collider.PNG?raw=true "Optional Title")
 -	Объект куб перекрасить в красный цвет;
 Скрин Red cube
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Not%20detected.PNG?raw=true "Optional Title")
 -	Добавить кубу симуляцию физики, при это куб не должен проваливаться под Plane;
 Скрин Red cube phisics
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Red%20cube%20phisics.PNG?raw=true "Optional Title")
 - Написать скрипт, который будет выводить в консоль сообщение о том, что объект Sphere столкнулся с объектом Cube;
 '''C#
 
@@ -61,19 +64,26 @@
 '''
 - При столкновении Cube должен менять свой цвет на зелёный, а при завершении столкновения обратно на красный.
 Скрин Cube + sphere
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Cube%20%2B%20sphere.PNG?raw=true "Optional Title")
 Скрин Cube+sphere 2
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Cube%2Bsphere%202.PNG?raw=true "Optional Title")
 
 ## Задание 2
 ### Продемонстрируйте на сцене в Unity следующее:
 - Что произойдёт с координатами объекта, если он перестанет быть дочерним?
 Координаты объекта изменятся с локальных на мировые
 Скрин cube dom
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/cube%20dom.PNG?raw=true "Optional Title")
 Скрин Cube nod dom
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Cube%20nod%20dom.PNG?raw=true "Optional Title")
 - Создайте три различных примера работы компонента RigidBody?
 Падение(гравитация), Существование как физической сущности(kinematic), Активация тригеров
 Скрин Gravity, trigger detection, kinematic
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Gravity%2C%20trigger%20detection%2C%20kinematic.PNG?raw=true "Optional Title")
 Скрин Gravity, trigger, kinematic 2
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Gravity%2C%20trigger%2C%20kinematic%202.PNG?raw=true "Optional Title")
 Скрин Not detected
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Not%20detected.PNG?raw=true "Optional Title")
 
 ## Задание 3
 ### Реализуйте на сцене генерацию n кубиков. Число n вводится пользователем после старта сцены.
@@ -81,7 +91,9 @@
 Считываем значение переменной при обновлении
 Если значение - верное количество объектов - спавник кубики
 Скрин Start spawn
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Start%20spawn.PNG?raw=true "Optional Title")
 Скрин End Spawn
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/End%20Spawn.PNG?raw=true "Optional Title")
 '''C#
 
         public class ReadLine : MonoBehaviour
