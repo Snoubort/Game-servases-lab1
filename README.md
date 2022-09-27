@@ -12,7 +12,7 @@
 ## Цель работы
 Освоить основы работы с Unity
 ## Задание 1
-###В разделе «ход работы» пошагово выполнить каждый пункт с описанием и примера реализации задач по теме видео самостоятельной работы.
+### В разделе «ход работы» пошагово выполнить каждый пункт с описанием и примера реализации задач по теме видео самостоятельной работы.
 Ход работы:
 - Создать новый проект из шаблона 3D – Core;
 - Проверить, что настроена интеграция редактора Unity и Visual Studio Code (пункты 8-10 введения);
@@ -31,7 +31,6 @@
 - Добавить кубу симуляцию физики, при это куб не должен проваливаться под Plane;
 ![Скрин Red cube phisics](https://github.com/Snoubort/Game-servases-lab1/blob/main/Red%20cube%20phisics.PNG?raw=true "Red cube phisics")
 - Написать скрипт, который будет выводить в консоль сообщение о том, что объект Sphere столкнулся с объектом Cube;
-'''C#
 
         public class AddCollider : MonoBehaviour
         {
@@ -57,8 +56,7 @@
                 other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
             }
         }
-    
-'''
+        
 - При столкновении Cube должен менять свой цвет на зелёный, а при завершении столкновения обратно на красный.
 ![Скрин Cube + sphere](https://github.com/Snoubort/Game-servases-lab1/blob/main/Cube%20%2B%20sphere.PNG?raw=true "Cube + sphere")
 ![Скрин Cube+sphere 2](https://github.com/Snoubort/Game-servases-lab1/blob/main/Cube%2Bsphere%202.PNG?raw=true "Cube+sphere 2")
@@ -82,7 +80,6 @@
 Если значение - верное количество объектов - спавник кубики
 ![Скрин Start spawn](https://github.com/Snoubort/Game-servases-lab1/blob/main/Start%20spawn.PNG?raw=true "Start spawn")
 ![Скрин End Spawn](https://github.com/Snoubort/Game-servases-lab1/blob/main/End%20Spawn.PNG?raw=true "End Spawn")
-'''C#
 
         public class ReadLine : MonoBehaviour
         {
@@ -108,7 +105,3 @@
             }
         }
     
-'''
-
-
-
