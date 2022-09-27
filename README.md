@@ -29,7 +29,7 @@
 ![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Sphere%20collider.PNG?raw=true "Optional Title")
 -	Объект куб перекрасить в красный цвет;
 Скрин Red cube
-![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Not%20detected.PNG?raw=true "Optional Title")
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Red%20cube.PNG?raw=true "Optional Title")
 -	Добавить кубу симуляцию физики, при это куб не должен проваливаться под Plane;
 Скрин Red cube phisics
 ![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/Red%20cube%20phisics.PNG?raw=true "Optional Title")
