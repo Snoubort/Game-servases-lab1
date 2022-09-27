@@ -16,7 +16,7 @@
 Ход работы:
 - Создать новый проект из шаблона 3D – Core;
 - Проверить, что настроена интеграция редактора Unity и Visual Studio Code (пункты 8-10 введения);
-Скрин "Подготовка"
+![Alt text](https://github.com/Snoubort/Game-servases-lab1/blob/main/%D0%9F%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0.PNG?raw=true "Интеграция")
 - Создать объект Plane;
 Скрин plane
 - Создать объект Cube;
